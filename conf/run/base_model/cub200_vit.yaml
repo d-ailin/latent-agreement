@@ -1,0 +1,6 @@
+model_seed: 500
+pre_flag: _pre
+data_seed: 42
+val_ratio: 0
+arch: vit_base_patch16_224.augreg_in21k
+name: "sup${run.base_model.pre_flag}_${run.base_model.arch}_ds${run.base_model.data_seed}_vr${run.base_model.val_ratio}_ms${run.base_model.model_seed}"

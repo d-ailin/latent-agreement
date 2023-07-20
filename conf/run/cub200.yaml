@@ -1,0 +1,21 @@
+defaults:
+  - dataset: cub200
+  - pretrain: single
+  - base_model: cub200_vit
+
+algo:
+  K: 10
+  score: ndcg_rank
+
+set:
+  eval_ood: False
+  neighbor_source: train
+  neighbor_pool_size: 5994
+  is_val_split_from_test: True
+  split_ratio: 0.5
+  split_seed: 1
+  val_source: test
+
+   
+  # testing parameters
+  method_loss: log_loss

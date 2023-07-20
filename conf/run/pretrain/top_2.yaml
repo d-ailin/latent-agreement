@@ -1,0 +1,5 @@
+name: top_2_v1
+models:
+  - clip_vit-l-14
+  - vit_large_patch16_224.augreg_in21k
+
